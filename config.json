@@ -1,6 +1,6 @@
 {
-    "token": "ODY0OTIwOTUwNTQ5NjQzMzU1.YO8eaA.EYHlNMIU7cLGomZ2U5h0UuvLgoQ",
-    "mongoPath": "mongodb+srv://Aussando:nagamerah123@astropedia.vyrfb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "token": "TOKEN",
+    "mongoPath": "MONGOO LINK",
 
     "hostedBy": true,
     "everyoneMention": false
