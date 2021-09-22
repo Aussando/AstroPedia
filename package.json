@@ -1,0 +1,35 @@
+{
+  "name": "astropedia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@iamtraction/google-translate": "^1.1.2",
+    "bindings": "^1.5.0",
+    "canvas": "^2.8.0",
+    "cpu-stat": "^2.0.1",
+    "discord-buttons": "^4.0.0",
+    "discord-giveaways": "^4.2.1",
+    "discord-reply": "^0.1.2",
+    "discord-together": "^1.2.0",
+    "discord.js": "^12.5.3",
+    "discord.js-pagination": "^1.0.3",
+    "epochutils": "^1.0.4",
+    "got": "^11.8.2",
+    "gps-time": "^1.0.8",
+    "mathjs": "^9.4.4",
+    "memer-api": "^3.0.6",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.5",
+    "ms": "^2.1.3",
+    "ndoe": "0.0.0",
+    "node-fetch": "^2.6.1",
+    "quick.db": "^7.1.3",
+    "ultrax": "^1.7.8"
+  }
+}
