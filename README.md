@@ -1,3 +1,10 @@
+# About Me
+Name: Aussando
+
+Language: Indonesia, English, Javanese
+
+National: Indonesia 🇮🇩
+
 # Links
 [Discord Server](https://discord.gg/zmM5hVpzQs) 
 
