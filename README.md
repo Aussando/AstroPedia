@@ -1,0 +1,2 @@
+# AstroPedia
+repository AstroPedia bot
