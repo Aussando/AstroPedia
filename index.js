@@ -27,7 +27,7 @@ bot.discordTogether = new DiscordTogether(bot);
 bot.config = config;
 bot.giveawaysManager = new GiveawaysManager(bot, {
     storage: "./giveaway.json",
-    updateCountdownEvery: 5000, //1000ms = 1s
+    updateCountdownEvery: 5000,
     default: {
         botsCanWin: false,
         exemptPermissions: [],
@@ -72,7 +72,7 @@ bot.on('messageDelete', (message) => {
 
     bot.snipes.set(message.channel.id, snipes);
 
-    //----------------------------------------------------------GHOST PING
+//----------------------------------------------------------GHOST PING
     if (message.mentions.users.first()) {
         if (message.mentions.users.first().bot) return
         const embed = new Discord.MessageEmbed()
@@ -102,7 +102,7 @@ bot.on("message", async (message) => {
         prefix = data.newPrefix
     }
 
-    //----------------------------------------------------------DATA(AFK)
+//----------------------------------------------------------DATA(AFK)
     let data2;
     try {
         data2 = await AFKS.findOne({
@@ -149,7 +149,7 @@ bot.on("message", async (message) => {
 
     }
 
-    //----------------------------------------------------------HANDLER
+//----------------------------------------------------------HANDLER
     if (message.content.toLowerCase().startsWith(prefix)) {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
 
@@ -180,5 +180,3 @@ bot.on("message", async (message) => {
 })
 
 bot.login(token);
-
-//----------------------------https://github.com/Aussando/AstroPedia
