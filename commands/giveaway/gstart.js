@@ -45,7 +45,7 @@ module.exports = {
 
             messages: {
                 giveaway: ":tada::tada: **GIVEAWAY** :tada::tada:",
-                giveawayEnd: ":tada::tada: **GIVEAWAY ENDED** :tada::tada:",
+                giveawayEnded: ":tada::tada: **GIVEAWAY ENDED** :tada::tada:",
                 timeRemaining: "Time Remaining **{duration}**",
                 inviteToParticipate: "React with 🎉 to join the giveaway!",
                 winMessage: "Congrats {winners}!, you win **{prize}**",
