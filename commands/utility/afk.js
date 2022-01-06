@@ -7,7 +7,7 @@ module.exports = {
     cooldown: 1000 * 10,
     usage: '[message]',
 
-    async run (client, message, args) {
+    async run (bot, message, args) {
         let data;
     try {
         data = await schema.findOne({
@@ -25,10 +25,14 @@ module.exports = {
     }
 
     const reason = args.join(" ")
-    message.lineReplyNoMention(`Your <:afk:883112715252555906> is now set to: ${reason || "AFK"}`).then(message.member.setNickname(`[AFK] ${message.author.username}`))
     
+    message.lineReplyNoMention(`Your <:afk:883112715252555906> is now set to: ${reason || "AFK"}`)
+
+    if(message.guild.roles.highest.name > message.guild.members.resolve(bot.user).roles.highest.name) message.member.setNickname(`[AFK] ${message.author.username}`)
+
     data.AFK = true
     data.AFK_Reason = args.join(" ")
     await data.save()
+
     }
-}
+} 
