@@ -71,26 +71,18 @@ bot.on('messageDelete', (message) => {
     });
 
     bot.snipes.set(message.channel.id, snipes);
-
-//----------------------------------------------------------GHOST PING
-    if (message.mentions.users.first()) {
-        if (message.mentions.users.first().bot) return
-        const embed = new Discord.MessageEmbed()
-            .setTitle("Ghost Ping Detector")
-            .setThumbnail("https://i.redd.it/ndozdv59jsx21.png")
-            .setColor("7FFFEC")
-            .addField("User:", message.author, true)
-            .addField("Pinged:", message.mentions.users.first(), true)
-            .addField("Message:", message.content)
-            .setTimestamp()
-        return message.channel.send(embed)
-    }
 })
 
 //----------------------------------------------------------DATA(PREFIX)
 bot.on("message", async (message) => {
 
     if (message.author.bot) return;
+
+    if (message.content.includes("@here") || message.content.includes("@everyone") || message.type == "REPLY") return false;
+
+    if (message.mentions.has(bot.user)) {
+        message.channel.send('here is my prefix `,`')
+    };
 
     let prefix;
     let data = await PrefixSchema.findOne({
@@ -122,7 +114,8 @@ bot.on("message", async (message) => {
     if (data2.AFK === true) {
         data2.AFK_Reason = null
         data2.AFK = false
-        message.lineReplyNoMention("Welcome back! Now i removed your <:afk:883112715252555906>").then(message.member.setNickname(""))
+        message.lineReplyNoMention("Welcome back! Now i removed your <:afk:883112715252555906>")
+        if(message.guild.roles.highest.name > message.guild.members.resolve(bot.user).roles.highest.name) message.member.setNickname("")
         await data2.save()
     }
 
@@ -180,3 +173,5 @@ bot.on("message", async (message) => {
 })
 
 bot.login(token);
+
+//----------------------------https://github.com/Aussando/AstroPedia
