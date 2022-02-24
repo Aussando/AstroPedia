@@ -1,11 +1,10 @@
 ### About Me
-Name: Aussando
-
-Language: Indonesia, English, Javanese
-
-National: Indonesia 🇮🇩
+- Name: Aussando
+- Language: Indonesia, English, Javanese
+- National: Indonesia 🇮🇩
 
 ### Links
-[Discord Server](https://discord.gg/zmM5hVpzQs) 
-
-[Invite AstroPedia](https://discord.com/oauth2/authorize?client_id=864920950549643355&scope=bot&permissions=37080590)
+- [Discord Server](https://discord.gg/zmM5hVpzQs)
+- [Youtube](https://www.youtube.com/channel/UCX58j1_EuFAtj4Sb0V0-VVA)
+- [Instagram](https://www.instagram.com/aussando/)
+- [Invite AstroPedia](https://discord.com/oauth2/authorize?client_id=864920950549643355&scope=bot&permissions=37080590)
